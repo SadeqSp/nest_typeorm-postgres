@@ -12,7 +12,7 @@ export class CarController {
   }
 
   @Get("/:id")
-  findOne(@Param() param): Promise<Cars[]> {
+  findOne(@Param() param): Promise<Cars> {
     return this.CarService.findOne(param.id);
   }
 }
